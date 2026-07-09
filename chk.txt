@@ -1,6 +1,14 @@
+0. lagbe na
 echo "# EntropyZero" >> README.md
-git init
-git add README.md
+
+step 01: git initialize kora ei step er kaj. 
+    need only one time for each project
+        --> git init
+
+step 02: git e file add kora. everytime lagbe.
+        --> git add .
+
+step 03: 
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/nayancsbd/EntropyZero.git
