@@ -1,0 +1,299 @@
+/* ---------- reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- shared ---------- */
+.button-colour {
+    background-color: #3b4cf5;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-colour:hover {
+    background-color: #2d3ce0;
+}
+
+.button-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 1.5px solid #d6d6e0;
+    padding: 0.9rem 1.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-outline:hover {
+    background-color: #f2f2f7;
+}
+
+.p-common-colour {
+    color: #6b6b76;
+    line-height: 1.6;
+}
+
+.top {
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+}
+
+.top h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.top p {
+    margin-top: 0.5rem;
+}
+
+/* ---------- nav ---------- */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-colour a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+}
+
+.logo-colour img {
+    width: 32px;
+    height: 32px;
+}
+
+.logo-text {
+    font-size: 0.85rem;
+    line-height: 1.1;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-size: 0.95rem;
+    color: #3a3a45;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #3b4cf5;
+}
+
+/* ---------- header / hero ---------- */
+header {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("./assets/hero.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 2rem;
+}
+
+.header-content {
+    max-width: 800px;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.header-content h1 em {
+    font-style: italic;
+}
+
+.header-content .p-common-colour {
+    color: #e2e2ea;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+}
+
+/* ---------- speakers ---------- */
+.speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+}
+
+.speaker-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.speaker-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    background-color: #e5e5ec;
+}
+
+.speaker-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.speaker-card .tag {
+    margin: 1rem 1.2rem 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.tag-aiml { color: #3b4cf5; }
+.tag-cloud { color: #3b4cf5; }
+.tag-frontend { color: #3b4cf5; }
+.tag-security { color: #3b4cf5; }
+
+.speaker-card h2 {
+    margin: 0 1.2rem 0.3rem;
+    font-size: 1.2rem;
+}
+
+.speaker-card p:not(.tag) {
+    margin: 0 1.2rem 1.2rem;
+    color: #6b6b76;
+    font-size: 0.9rem;
+}
+
+/* ---------- pricing ---------- */
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto 5rem;
+    padding: 0 1.5rem;
+    align-items: stretch;
+}
+
+.price-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card-highlight {
+    background-color: #0d1224;
+    color: #fff;
+    border: none;
+}
+
+.plan-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #8a8a95;
+}
+
+.price-card-highlight .plan-label {
+    color: #9ea3c9;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0.4rem 0 0.1rem;
+}
+
+.price-sub {
+    color: #8a8a95;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.price-card-highlight .price-sub {
+    color: #9ea3c9;
+}
+
+.price-card ul {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.price-card ul li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+}
+
+.price-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3b4cf5;
+}
+
+.price-card-highlight ul li::before {
+    color: #6b7bff;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .speakers,
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+}
